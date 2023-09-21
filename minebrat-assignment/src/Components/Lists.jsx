@@ -8,7 +8,7 @@ const Lists = () => {
     const [submitted, setSubmitted] = useState(false);
 
     useEffect(() => {
-        fetch('https://api.minebrat.com/api/v1/states')
+        fetch('/api/v1/states')
             .then((response) => response.json())
             .then((data) => setStates(data))
             .catch((error) => console.log(error));
